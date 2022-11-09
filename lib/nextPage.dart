@@ -10,11 +10,26 @@ class NextPage extends StatefulWidget{
 }
 
 class _NextPageState extends State<NextPage> {
+
+  void _backPage(){
+    Navigator.pop(context);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            TextButton(onPressed: _backPage,
+                child:
+                const Text("Main Page"))
+          ],
+        ),
       ),
     );
   }
