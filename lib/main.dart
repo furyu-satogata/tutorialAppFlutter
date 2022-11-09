@@ -1,3 +1,4 @@
+import 'package:begginer_tutorial_app/nextPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,6 +33,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _goNextPage(){
     print("test print");
+    Navigator.push(context,
+        MaterialPageRoute(builder: (context) => NextPage(title: "NextPage"))
+    );
   }
 
   @override
