@@ -37,13 +37,12 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _text = inputText;
     });
-    print(_text);
   }
 
   void _goNextPage(){
     print("test print");
     Navigator.push(context,
-        MaterialPageRoute(builder: (context) => NextPage(title: "NextPage"))
+        MaterialPageRoute(builder: (context) => NextPage(title: "NextPage", inputText: _text,))
     );
   }
 
