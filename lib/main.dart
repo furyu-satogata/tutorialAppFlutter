@@ -31,6 +31,15 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
+  String _text = '';
+
+  void _detectChangeText(String inputText) {
+    setState(() {
+      _text = inputText;
+    });
+    print(_text);
+  }
+
   void _goNextPage(){
     print("test print");
     Navigator.push(context,
@@ -48,6 +57,19 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(50.0),
+              child: new TextField(
+                enabled: true,
+                maxLength: 100,
+                maxLines: 2,
+                decoration: const InputDecoration(
+                  hintText: '表示したい文字列を入力してください \n (２行目まで表示されます)',
+                  labelText: '文字列',
+                ),
+                onChanged: _detectChangeText,
+              ),
+            ),
             TextButton(onPressed: _goNextPage,
                 child:
             const Text("Next Page"))

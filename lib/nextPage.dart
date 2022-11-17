@@ -25,6 +25,7 @@ class _NextPageState extends State<NextPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Text(""),
             TextButton(onPressed: _backPage,
                 child:
                 const Text("Main Page"))
