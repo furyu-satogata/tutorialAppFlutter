@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_translator/google_translator.dart';
 
 class NextPage extends StatefulWidget{
   const NextPage({super.key, required this.title, required this.inputText});
@@ -12,6 +13,7 @@ class NextPage extends StatefulWidget{
 
 class _NextPageState extends State<NextPage> {
   String _inputText = "";
+  String translateText = "";
   void _backPage(){
     Navigator.pop(context);
   }
@@ -36,7 +38,8 @@ class _NextPageState extends State<NextPage> {
             Container(
               padding: const EdgeInsets.all(50.0),
               child:
-                Text(_inputText),
+                // Text(_inputText),
+              Text(_inputText).translate(),
             ),
             TextButton(onPressed: _backPage,
                 child:
