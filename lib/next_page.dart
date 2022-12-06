@@ -13,7 +13,6 @@ class NextPage extends StatefulWidget{
 
 class _NextPageState extends State<NextPage> {
   String _inputText = "";
-  String translateText = "";
   void _backPage(){
     Navigator.pop(context);
   }

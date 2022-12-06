@@ -1,6 +1,5 @@
 import 'package:begginer_tutorial_app/next_page.dart';
 import 'package:flutter/material.dart';
-import 'package:google_translator/google_translator.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -24,7 +23,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void _goNextPage(){
     print("test print");
     Navigator.push(context,
-        MaterialPageRoute(builder: (context) => NextPage(title: "NextPage", inputText: _text,))
+        MaterialPageRoute(builder: (context) => NextPage(title: "Result Page", inputText: _text,))
     );
   }
 

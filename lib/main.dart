@@ -1,4 +1,3 @@
-import 'package:begginer_tutorial_app/next_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_translator/google_translator.dart';
 import 'package:begginer_tutorial_app/my_home_page.dart';
