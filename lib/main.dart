@@ -9,7 +9,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  final String apiKey = "AIzaSyBszAiH4Z3TKMc0xlnOlW78zd6n0z9g4CA";
+  final String apiKey = "APIKey";
 
   @override
   Widget build(BuildContext context) {
