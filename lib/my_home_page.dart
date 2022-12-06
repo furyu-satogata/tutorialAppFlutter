@@ -12,7 +12,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  String _text = '';
+  String _text ="";
 
   void _detectChangeText(String inputText) {
     setState(() {
@@ -44,8 +44,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 maxLength: 100,
                 maxLines: 2,
                 decoration: const InputDecoration(
-                  hintText: '表示したい文字列を入力してください \n (２行目まで表示されます)',
-                  labelText: '文字列',
+                  hintText: "表示したい文字列を入力してください \n (２行目まで表示されます)",
+                  labelText: "文字列",
                 ),
                 onChanged: _detectChangeText,
               ),

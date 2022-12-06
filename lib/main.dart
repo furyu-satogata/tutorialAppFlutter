@@ -15,11 +15,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GoogleTranslatorInit(apiKey,
         builder: () => (MaterialApp(
-      title: 'Tutorial',
+      title: "Tutorial",
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Tutorial Home Page'),
+      home: const MyHomePage(title: "Flutter Tutorial Home Page"),
     )),
         translateFrom: Locale("ja"),
         translateTo: Locale("en"));
